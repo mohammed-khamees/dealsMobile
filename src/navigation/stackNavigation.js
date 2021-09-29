@@ -1,7 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import TabsNavigator from './tabsNavigator';
+// import TabsNavigator from './tabsNavigator';
 import FlashSale from '../screens/flashSale';
+import Home from '../screens/home';
 
 const Stack = createStackNavigator();
 
@@ -11,9 +12,9 @@ const StackNavigator = () => {
 			screenOptions={{
 				headerShown: false,
 			}}
-			initialRouteName="Home"
+			initialRouteName="FlashSale"
 		>
-			<Stack.Screen name="Home" component={TabsNavigator} />
+			<Stack.Screen name="Home" component={Home} />
 			<Stack.Screen name="FlashSale" component={FlashSale} />
 		</Stack.Navigator>
 	);
